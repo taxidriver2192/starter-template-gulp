@@ -1,0 +1,9 @@
+// [GROUP] CONFIGURING A MIXIN TO CONNECT A CONTAINER
+// ===================================================================================================>
+@mixin container-base($width-container, $indents-container) {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: #{$indents-container};
+  padding-left: #{$indents-container};
+  max-width: #{$width-container};
+}

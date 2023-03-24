@@ -1,0 +1,29 @@
+.site-body {
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
+  &::-webkit-scrollbar {
+    width: var(--scrollbar-size);
+    height: var(--scrollbar-size);
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: var(--scrollbar-track-corner-radius);
+    background-color: var(--scrollbar-track-color);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: var(--scrollbar-thumb-corner-radius);
+    background-color: var(--scrollbar-thumb-color);
+  }
+
+  &::-webkit-scrollbar-corner {
+    background-color: var(--scrollbar-corner-color);
+  }
+
+  @include pointer {
+    text-rendering: optimizeSpeed;
+  }
+}

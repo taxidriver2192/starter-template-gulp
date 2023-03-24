@@ -1,0 +1,206 @@
+// [GROUP] SETTING UP MIXINS WITH DIFFERENT BREAKPOINTS | SY GRID - DESKTOP FIRST
+// ===================================================================================================>
+// [INFORMATION] => [Breakpoint - 2551.98px | Container - 1880px | Padding - 16px]
+@mixin bp-grid-max-2552 {
+  @media screen and (max-width: 159.4988em) {
+    @content;
+  }
+}
+
+// [INFORMATION] => [Breakpoint - 1903.98px | Container - 1568px | Padding - 16px]
+@mixin bp-grid-max-1904 {
+  @media screen and (max-width: 118.9988em) {
+    @content;
+  }
+}
+
+// [INFORMATION] => [Breakpoint - 1591.98px | Container - 1400px | Padding - 16px]
+@mixin bp-grid-max-1592 {
+  @media screen and (max-width: 99.4988em) {
+    @content;
+  }
+}
+
+// [INFORMATION] => [Breakpoint - 1423.98px | Container - 1256px | Padding - 16px]
+@mixin bp-grid-max-1424 {
+  @media screen and (max-width: 88.9988em) {
+    @content;
+  }
+}
+
+// [INFORMATION] => [Breakpoint - 1279.98px | Container - 1088px | Padding - 16px]
+@mixin bp-grid-max-1280 {
+  @media screen and (max-width: 79.9988em) {
+    @content;
+  }
+}
+
+// [INFORMATION] => [Breakpoint - 1111.98px | Container - 944px | Padding - 16px]
+@mixin bp-grid-max-1112 {
+  @media screen and (max-width: 69.4988em) {
+    @content;
+  }
+}
+
+// [INFORMATION] => [Breakpoint - 967.98px | Container - 824px | Padding - 16px]
+@mixin bp-grid-max-968 {
+  @media screen and (max-width: 60.4988em) {
+    @content;
+  }
+}
+
+// [INFORMATION] => [Breakpoint - 839.98px | Container - 752px | Padding - 16px]
+@mixin bp-grid-max-840 {
+  @media screen and (max-width: 52.4988em) {
+    @content;
+  }
+}
+
+// [INFORMATION] => [Breakpoint - 767.98px | Container - 640px | Padding - 16px]
+@mixin bp-grid-max-768 {
+  @media screen and (max-width: 47.9988em) {
+    @content;
+  }
+}
+
+// [INFORMATION] => [Breakpoint - 639.98px | Container - 100% | Padding - 16px]
+@mixin bp-grid-max-640 {
+  @media screen and (max-width: 39.9988em) {
+    @content;
+  }
+}
+
+// [INFORMATION] => [Breakpoint - 479.98px | Container - 100% | Padding - 16px]
+@mixin bp-grid-max-480 {
+  @media screen and (max-width: 29.9988em) {
+    @content;
+  }
+}
+
+// [INFORMATION] => [Breakpoint - 319.98px | Container - 100% | Padding - 8px]
+@mixin bp-grid-max-320 {
+  @media screen and (max-width: 19.9988em) {
+    @content;
+  }
+}
+
+// [INFORMATION] => [Breakpoint - 223.98px | Container - 100% | Padding - 8px]
+@mixin bp-grid-max-224 {
+  @media screen and (max-width: 13.9987em) {
+    @content;
+  }
+}
+
+// [GROUP] SETTING UP MIXINS WITH DIFFERENT BREAKPOINTS | SY GRID - MOBILE FIRST
+// ===================================================================================================>
+// [INFORMATION] => [Breakpoint - 160px | Container - 100% | Padding - 8px]
+@mixin bp-grid-min-160 {
+  @media screen and (min-width: 10em) {
+    @content;
+  }
+}
+
+// [INFORMATION] => [Breakpoint - 224px | Container - 100% | Padding - 8px]
+@mixin bp-grid-min-224 {
+  @media screen and (min-width: 14em) {
+    @content;
+  }
+}
+
+// [INFORMATION] => [Breakpoint - 320px | Container - 100% | Padding - 16px]
+@mixin bp-grid-min-320 {
+  @media screen and (min-width: 20em) {
+    @content;
+  }
+}
+
+// [INFORMATION] => [Breakpoint - 480px | Container - 100% | Padding - 16px]
+@mixin bp-grid-min-480 {
+  @media screen and (min-width: 30em) {
+    @content;
+  }
+}
+
+// [INFORMATION] => [Breakpoint - 640px | Container - 640px | Padding - 16px]
+@mixin bp-grid-min-640 {
+  @media screen and (min-width: 40em) {
+    @content;
+  }
+}
+
+// [INFORMATION] => [Breakpoint - 768px | Container - 752px | Padding - 16px]
+@mixin bp-grid-min-768 {
+  @media screen and (min-width: 48em) {
+    @content;
+  }
+}
+
+// [INFORMATION] => [Breakpoint - 840px | Container - 824px | Padding - 16px]
+@mixin bp-grid-min-840 {
+  @media screen and (min-width: 52.5em) {
+    @content;
+  }
+}
+
+// [INFORMATION] => [Breakpoint - 968px | Container - 944px | Padding - 16px]
+@mixin bp-grid-min-968 {
+  @media screen and (min-width: 60.5em) {
+    @content;
+  }
+}
+
+// [INFORMATION] => [Breakpoint - 1112px | Container - 1088px | Padding - 16px]
+@mixin bp-grid-min-1112 {
+  @media screen and (min-width: 69.5em) {
+    @content;
+  }
+}
+
+// [INFORMATION] => [Breakpoint - 1280px | Container - 1256px | Padding - 16px]
+@mixin bp-grid-min-1280 {
+  @media screen and (min-width: 80em) {
+    @content;
+  }
+}
+
+// [INFORMATION] => [Breakpoint - 1424px | Container - 1400px | Padding - 16px]
+@mixin bp-grid-min-1424 {
+  @media screen and (min-width: 89em) {
+    @content;
+  }
+}
+
+// [INFORMATION] => [Breakpoint - 1592px | Container - 1568px | Padding - 16px]
+@mixin bp-grid-min-1592 {
+  @media screen and (min-width: 99.5em) {
+    @content;
+  }
+}
+
+// [INFORMATION] => [Breakpoint - 1904px | Container - 1880px | Padding - 16px]
+@mixin bp-grid-min-1904 {
+  @media screen and (min-width: 119em) {
+    @content;
+  }
+}
+
+// [INFORMATION] => [Breakpoint - 2552px | Container - 2528px | Padding - 16px]
+@mixin bp-grid-min-2552 {
+  @media screen and (min-width: 159.5em) {
+    @content;
+  }
+}
+
+// [GROUP] SETTING UP MIXINS WITH DIFFERENT BREAKPOINTS | CUSTOM
+// ===================================================================================================>
+// @mixin bp-custom-max-1120 {
+//   @media screen and (max-width: 70em) {
+//     @content;
+//   }
+// }
+
+// @mixin bp-custom-min-1120 {
+//   @media screen and (min-width: 70em) {
+//     @content;
+//   }
+// }

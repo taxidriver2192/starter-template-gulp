@@ -1,0 +1,9 @@
+.site-container {
+  --content-width: 0;
+  --container-offset: 0;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // @include container-base();
+
+  box-sizing: border-box;
+}

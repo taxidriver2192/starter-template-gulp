@@ -1,0 +1,409 @@
+// ! destyle.css v4.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css
+// ! Some improvements made by SineYlo v3.5.0 | MIT License | https://github.com/SineYlo/destyle
+
+// [GROUP] RESET BOX-MODEL AND SET BORDERS
+// ===================================================================================================>
+@mixin box-sizing-dereset {
+  box-sizing: border-box;
+}
+
+@mixin borders-dereset {
+  border-style: solid;
+  border-width: 0;
+}
+
+// [GROUP] DOCUMENT
+// ===================================================================================================>
+// [INFORMATION] => [1][Correct the line height in all browsers]
+// [INFORMATION] => [2][Prevent adjustments of font size after orientation changes in iOS]
+// [INFORMATION] => [3][Remove gray overlay on links for iOS]
+@mixin html-dereset {
+  line-height: 1.15; // [1]
+  -webkit-text-size-adjust: 100%; // [2]
+  -webkit-tap-highlight-color: transparent; // [3]
+}
+
+// [GROUP] SECTIONS
+// ===================================================================================================>
+// [INFORMATION] => [Render the 'main' element consistently in IE]
+@mixin main-dereset {
+  display: block;
+}
+
+// [GROUP] VERTICAL RHYTHM
+// ===================================================================================================>
+// [INFORMATION] => [body, p, table, blockquote, address, pre, iframe, form, figure, dl]
+@mixin margin-dereset {
+  margin: 0;
+}
+
+// [GROUP] HEADINGS
+// ===================================================================================================>
+@mixin heading-dereset {
+  margin: 0;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+// [GROUP] LISTS | ENUMERATION
+// ===================================================================================================>
+@mixin list-enum-dereset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// [GROUP] LISTS | DEFINITION
+// ===================================================================================================>
+@mixin dt-dereset {
+  font-weight: 700;
+}
+
+@mixin dd-dereset {
+  margin-left: 0;
+}
+
+// [GROUP] GROUPING CONTENT
+// ===================================================================================================>
+// [INFORMATION] => [1][Show the overflow in Edge and IE]
+// [INFORMATION] => [2][Add the correct box sizing in Firefox]
+@mixin hr-dereset {
+  clear: both;
+  overflow: visible; // [1]
+  margin: 0;
+  border-top-width: 1px;
+  height: 0; // [2]
+  box-sizing: content-box; // [2]
+  color: inherit;
+}
+
+// [INFORMATION] => [1][Correct the inheritance and scaling of font size in all browsers]
+// [INFORMATION] => [2][Correct the odd 'em' font sizing in all browsers]
+@mixin pre-dereset {
+  font-family: monospace, monospace; // [1]
+  font-size: inherit; // [2]
+}
+
+@mixin address-dereset {
+  font-style: inherit;
+}
+
+// [GROUP] TEXT-LEVEL SEMANTICS
+// ===================================================================================================>
+// [INFORMATION] => [Remove the gray background on active links in IE 10]
+@mixin link-dereset {
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+}
+
+// [INFORMATION] => [Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari]
+@mixin abbr-dereset {
+  &[title] {
+    text-decoration: underline dotted;
+  }
+}
+
+// [INFORMATION] => [Add the correct font weight in Chrome, Edge, and Safari]
+@mixin b-dereset {
+  font-weight: bolder;
+}
+
+@mixin strong-dereset {
+  font-weight: bolder;
+}
+
+// [INFORMATION] => [1][Correct the inheritance and scaling of font size in all browsers]
+// [INFORMATION] => [2][Correct the odd 'em' font sizing in all browsers]
+@mixin code-dereset {
+  font-family: monospace, monospace; // [1]
+  font-size: inherit; // [2]
+}
+
+@mixin kbd-dereset {
+  font-family: monospace, monospace; // [1]
+  font-size: inherit; // [2]
+}
+
+@mixin samp-dereset {
+  font-family: monospace, monospace; // [1]
+  font-size: inherit; // [2]
+}
+
+// [INFORMATION] => [Add the correct font size in all browsers]
+@mixin small-dereset {
+  font-size: 80%;
+}
+
+// [INFORMATION] => [Prevent 'sub' and 'sup' elements from affecting the line height in all browsers]
+@mixin sub-dereset {
+  position: relative;
+  bottom: -0.25em;
+  vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+}
+
+@mixin sup-dereset {
+  position: relative;
+  top: -0.5em;
+  vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+}
+
+// [GROUP] EMBEDDED CONTENT
+// ===================================================================================================>
+// [INFORMATION] => [1][Prevent vertical alignment issues]
+// [INFORMATION] => [2][These properties will proportionally change the image, and also will not allow it to be larger than its parent]
+@mixin img-dereset {
+  vertical-align: bottom; // [1]
+  height: auto; // [2]
+  max-width: 100%; // [2]
+}
+
+// [INFORMATION] => [Prevent vertical alignment issues]
+@mixin svg-dereset {
+  vertical-align: bottom;
+}
+
+@mixin embed-dereset {
+  vertical-align: bottom;
+}
+
+@mixin object-dereset {
+  vertical-align: bottom;
+}
+
+@mixin iframe-dereset {
+  vertical-align: bottom;
+}
+
+// [GROUP] FORMS
+// ===================================================================================================>
+// [INFORMATION] => [Reset form fields to make them styleable]
+@mixin button-dereset {
+  -webkit-appearance: none;
+  appearance: none;
+  vertical-align: middle;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  font: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+  color: inherit;
+  background: transparent;
+  cursor: pointer;
+
+  &:disabled {
+    cursor: default;
+  }
+}
+
+@mixin field-dereset {
+  -webkit-appearance: none;
+  appearance: none;
+  vertical-align: middle;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  font: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+  color: inherit;
+  background: transparent;
+}
+
+@mixin field-number-dereset {
+  // [INFORMATION] => [1][Correct the cursor style of increment and decrement buttons in Chrome]
+  // [INFORMATION] => [2][Shows up/down arrows for a field with the number type in WebKit-based browsers]
+  &[type="number"]::-webkit-inner-spin-button,
+  &[type="number"]::-webkit-outer-spin-button {
+    height: auto; // [1]
+    opacity: 1; // [2]
+  }
+
+  // [INFORMATION] => [Fix appearance for Firefox]
+  &[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
+
+@mixin field-search-dereset {
+  // [INFORMATION] => [Removes all default styles from the search field in browsers on the WebKit engine]
+  &[type="search"]::-webkit-search-decoration,
+  &[type="search"]::-webkit-search-cancel-button,
+  &[type="search"]::-webkit-search-results-button,
+  &[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+  }
+
+  // [INFORMATION] => [Correct the outline style in Safari]
+  &[type="search"] {
+    outline-offset: -2px;
+  }
+}
+
+// [INFORMATION] => [Correct cursors for clickable elements]
+@mixin field-clickable-dereset {
+  &[type="button"],
+  &[type="reset"],
+  &[type="submit"] {
+    cursor: pointer;
+
+    &:disabled {
+      cursor: default;
+    }
+  }
+}
+
+// [INFORMATION] => [Use it if the textarea is completely different in styles from the input fields (by appearance)]
+// [INFORMATION] => [1][Remove the default vertical scrollbar in IE 10+]
+// [INFORMATION] => [2][Returns the 'white-space' property for the textarea element in the Safari browser]
+@mixin field-textarea-dereset {
+  overflow: auto; // [1]
+  white-space: revert; // [2]
+}
+
+@mixin textarea-dereset {
+  -webkit-appearance: none;
+  appearance: none;
+  vertical-align: middle;
+  overflow: auto; // [1]
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  font: inherit;
+  white-space: revert; // [2]
+  text-align: inherit;
+  text-transform: inherit;
+  color: inherit;
+  background: transparent;
+}
+
+@mixin optgroup-dereset {
+  -webkit-appearance: none;
+  appearance: none;
+  vertical-align: middle;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  font: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+  color: inherit;
+  background: transparent;
+}
+
+@mixin select-dereset {
+  -webkit-appearance: none;
+  appearance: none;
+  vertical-align: middle;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  font: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+  color: inherit;
+  background: transparent;
+
+  &:disabled {
+    opacity: inherit;
+  }
+}
+
+// [INFORMATION] => [Remove padding]
+@mixin option-dereset {
+  padding: 0;
+}
+
+// [INFORMATION] => [Reset to invisible]
+@mixin fieldset-dereset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+@mixin legend-dereset {
+  padding: 0;
+}
+
+// [INFORMATION] => [Add the correct vertical alignment in Chrome, Firefox, and Opera]
+@mixin progress-dereset {
+  vertical-align: baseline;
+}
+
+// [INFORMATION] => [Improve outlines for Firefox and unify style with input elements & buttons]
+@mixin moz-focusring-dereset {
+  &:-moz-focusring {
+    outline: auto;
+  }
+}
+
+// [INFORMATION] => [1][Correct the inability to style clickable types in iOS and Safari]
+// [INFORMATION] => [2][Change font properties to 'inherit' in Safari]
+@mixin webkit-file-upload-button-dereset {
+  &::-webkit-file-upload-button {
+    -webkit-appearance: button; // [1]
+    font: inherit; // [2]
+  }
+}
+
+// [INFORMATION] => [Clickable labels]
+@mixin label-dereset {
+  &[for] {
+    cursor: pointer;
+  }
+}
+
+// [INFORMATION] => [Fix placeholder color for Firefox]
+@mixin moz-placeholder-dereset {
+  &::-moz-placeholder,
+  &:-moz-placeholder {
+    opacity: 1;
+  }
+}
+
+// [GROUP] INTERACTIVE
+// ===================================================================================================>
+// [INFORMATION] => [Add the correct display in Edge, IE 10+, and Firefox]
+@mixin details-dereset {
+  display: block;
+}
+
+// [INFORMATION] => [Add the correct display in all browsers]
+@mixin summary-dereset {
+  display: list-item;
+}
+
+// [INFORMATION] => [Remove outline for editable content]
+@mixin contenteditable-dereset {
+  &[contenteditable]:focus {
+    outline: none;
+  }
+}
+
+// [GROUP] TABLE
+// ===================================================================================================>
+@mixin table-dereset {
+  border-color: inherit;
+  border-collapse: collapse;
+}
+
+@mixin caption-dereset {
+  text-align: left;
+}
+
+@mixin td-dereset {
+  vertical-align: top;
+  padding: 0;
+}
+
+@mixin th-dereset {
+  vertical-align: top;
+  padding: 0;
+  font-weight: 700;
+  text-align: left;
+}

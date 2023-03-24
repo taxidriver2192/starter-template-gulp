@@ -1,0 +1,16 @@
+// [GROUP] SETTING UP MIXINS TO CONVERT UNITS OF MEASUREMENT
+// ===================================================================================================>
+// [INFORMATION] => [Converting px to rem]
+@function px-to-rem($our-unit-size, $basic-unit: 16px) {
+  @return calc($our-unit-size / $basic-unit) * 1rem;
+}
+
+// [INFORMATION] => [Finding percentages of a number from a number]
+@function percentage-of-number($child-size, $parent-size) {
+  @return calc(($child-size * 100) / $parent-size) * 1%;
+}
+
+// [INFORMATION] => [Calculating the numeric value of the line height]
+@function lh-numeric($font-size, $line-height) {
+  @return calc($line-height / $font-size) * 1;
+}

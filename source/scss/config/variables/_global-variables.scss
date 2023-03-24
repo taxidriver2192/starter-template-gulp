@@ -1,0 +1,181 @@
+// [GROUP] CUSTOM PROPERTIES
+// ===================================================================================================>
+:root {
+  // [GROUP] COLOR
+  // =================================================================================================>
+  // [INFORMATION] => [Different hue options]
+  --first-hue: null;
+  --second-hue: null;
+  --third-hue: null;
+  --fourth-hue: null;
+
+  // [INFORMATION] => [Color palette | Hue - ]
+  --first-color-palette-one: hsl(var(--first-hue));
+  --first-color-palette-two: hsl(var(--first-hue));
+  --first-color-palette-three: hsl(var(--first-hue));
+  --first-color-palette-four: hsl(var(--first-hue));
+
+  // [INFORMATION] => [Color palette | Hue - ]
+  --second-color-palette-one: hsl(var(--second-hue));
+  --second-color-palette-two: hsl(var(--second-hue));
+  --second-color-palette-three: hsl(var(--second-hue));
+  --second-color-palette-four: hsl(var(--second-hue));
+
+  // [INFORMATION] => [Color palette | Hue - ]
+  --third-color-palette-one: hsl(var(--third-hue));
+  --third-color-palette-two: hsl(var(--third-hue));
+  --third-color-palette-three: hsl(var(--third-hue));
+  --third-color-palette-four: hsl(var(--third-hue));
+
+  // [INFORMATION] => [Color palette | Hue - ]
+  --fourth-color-palette-one: hsl(var(--fourth-hue));
+  --fourth-color-palette-two: hsl(var(--fourth-hue));
+  --fourth-color-palette-three: hsl(var(--fourth-hue));
+  --fourth-color-palette-four: hsl(var(--fourth-hue));
+
+  // [INFORMATION] => [Other colors]
+  --first-other-color: null;
+  --second-other-color: null;
+  --third-other-color: null;
+  --fourth-other-color: null;
+  --fifth-other-color: null;
+  --sixth-other-color: null;
+  --seventh-other-color: null;
+  --eighth-other-color: null;
+  --ninth-other-color: null;
+  --tenth-other-color: null;
+  --eleventh-other-color: null;
+  --twelfth-other-color: null;
+  --thirteenth-other-color: null;
+  --fourteenth-other-color: null;
+  --fifteenth-other-color: null;
+  --sixteenth-other-color: null;
+  --seventeenth-other-color: null;
+  --eighteenth-other-color: null;
+  --nineteenth-other-color: null;
+  --twentieth-other-color: null;
+  --twenty-first-other-color: null;
+  --twenty-second-other-color: null;
+  --twenty-third-other-color: null;
+  --twenty-fourth-other-color: null;
+  --twenty-fifth-other-color: null;
+  --twenty-sixth-other-color: null;
+  --twenty-seventh-other-color: null;
+  --twenty-eighth-other-color: null;
+  --twenty-ninth-other-color: null;
+  --thirtieth-other-color: null;
+
+  // [GROUP] FONT-FAMILY
+  // =================================================================================================>
+  // [INFORMATION] => [Different font family options]
+  --first-font-family: null;
+  --second-font-family: null;
+  --third-font-family: null;
+  --fourth-font-family: null;
+
+  // [GROUP] FONT-WEIGHT
+  // =================================================================================================>
+  // [INFORMATION] => [Different font weight options]
+  --first-font-weight: null;
+  --second-font-weight: null;
+  --third-font-weight: null;
+  --fourth-font-weight: null;
+  --fifth-font-weight: null;
+  --sixth-font-weight: null;
+  --seventh-font-weight: null;
+  --eighth-font-weight: null;
+  --ninth-font-weight: null;
+  --tenth-font-weight: null;
+
+  // [GROUP] FONT-SIZE
+  // =================================================================================================>
+  // [INFORMATION] => [Base font size]
+  --text-size-base: null;
+
+  // [INFORMATION] => [Different font size options]
+  --text-size-min-tiny: calc(var(--text-size-base) - null);
+  --text-size-min-small: calc(var(--text-size-base) - null);
+  --text-size-min-medium: calc(var(--text-size-base) - null);
+  --text-size-min-big: calc(var(--text-size-base) - null);
+  --text-size-min-large: calc(var(--text-size-base) - null);
+  --text-size-min-huge: calc(var(--text-size-base) - null);
+  --text-size-tiny: calc(var(--text-size-base) - null);
+  --text-size-small: calc(var(--text-size-base) - null);
+  --text-size-medium: calc(var(--text-size-base) + null);
+  --text-size-big: calc(var(--text-size-base) + null);
+  --text-size-large: calc(var(--text-size-base) + null);
+  --text-size-huge: calc(var(--text-size-base) + null);
+  --text-size-max-tiny: calc(var(--text-size-base) + null);
+  --text-size-max-small: calc(var(--text-size-base) + null);
+  --text-size-max-medium: calc(var(--text-size-base) + null);
+  --text-size-max-big: calc(var(--text-size-base) + null);
+  --text-size-max-large: calc(var(--text-size-base) + null);
+  --text-size-max-huge: calc(var(--text-size-base) + null);
+
+  // [GROUP] LINE-HEIGHT
+  // =================================================================================================>
+  // [INFORMATION] => [Different line height options]
+  --first-line-height: null;
+  --second-line-height: null;
+  --third-line-height: null;
+  --fourth-line-height: null;
+  --fifth-line-height: null;
+  --sixth-line-height: null;
+  --seventh-line-height: null;
+  --eighth-line-height: null;
+  --ninth-line-height: null;
+  --tenth-line-height: null;
+
+  // [GROUP] BORDER-RADIUS
+  // =================================================================================================>
+  // [INFORMATION] => [Different border radius options]
+  --first-border-radius: null;
+  --second-border-radius: null;
+  --third-border-radius: null;
+  --fourth-border-radius: null;
+  --fifth-border-radius: null;
+  --sixth-border-radius: null;
+  --seventh-border-radius: null;
+  --eighth-border-radius: null;
+  --ninth-border-radius: null;
+  --tenth-border-radius: null;
+
+  // [GROUP] GAP
+  // =================================================================================================>
+  // [INFORMATION] => [Different gap options]
+  --first-gap: null;
+  --second-gap: null;
+  --third-gap: null;
+  --fourth-gap: null;
+  --fifth-gap: null;
+  --sixth-gap: null;
+  --seventh-gap: null;
+  --eighth-gap: null;
+  --ninth-gap: null;
+  --tenth-gap: null;
+
+  // [GROUP] SCROLLBAR
+  // =================================================================================================>
+  // [INFORMATION] => [Different scrollbar options]
+  --scrollbar-size: null;
+  --scrollbar-track-color: null;
+  --scrollbar-track-corner-radius: null;
+  --scrollbar-thumb-color: null;
+  --scrollbar-thumb-corner-radius: null;
+  --scrollbar-corner-color: null;
+
+  // [GROUP] TRANSITION
+  // =================================================================================================>
+  // [INFORMATION] => [Duration of effects (most effective 0.2 to 0.4s)]
+  --fast-transition-duration: 0.2s;
+  --medium-transition-duration: 0.3s;
+  --slow-transition-duration: 0.4s;
+
+  // [GROUP] ANIMATION
+  // =================================================================================================>
+  // [INFORMATION] => [Duration of animations (most effective 0.2 to 0.5s)]
+  --fast-animation-duration: 0.2s;
+  --medium-animation-duration: 0.3s;
+  --slow-animation-duration: 0.4s;
+  --very-slow-animation-duration: 0.5s;
+}

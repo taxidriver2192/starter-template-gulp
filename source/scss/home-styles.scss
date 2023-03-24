@@ -1,0 +1,121 @@
+// [GROUP] CONNECTING FILES WITH BASIC SETTINGS
+// ===================================================================================================>
+@import "./config/resets/destyle-mixins";
+@import "./config/functions/functions";
+@import "./config/mixins/mixins";
+@import "./config/fonts/home-fonts";
+@import "./config/variables/global-variables";
+
+// [GROUP] CONNECTING THE COMPONENTS | LIBRARIES
+// ===================================================================================================>
+// @import "./components/blocks/";
+
+// [GROUP] CONNECTING THE COMPONENTS | BASIC
+// ===================================================================================================>
+@import "./components/site/site-page";
+@import "./components/site/site-body";
+
+// [GROUP] CONNECTING THE COMPONENTS | PRELOADER
+// ===================================================================================================>
+// @import "./components/site/";
+
+// [GROUP] CONNECTING THE COMPONENTS | CONTAINER
+// ===================================================================================================>
+@import "./components/site/site-container";
+
+// [GROUP] CONNECTING THE COMPONENTS | COMMON BLOCKS
+// ===================================================================================================>
+// [INFORMATION] => [Independent blocks]
+// @import "./components/blocks/";
+// [INFORMATION] => [Hints]
+// @import "./components/blocks/";
+// [INFORMATION] => [Tooltips]
+// @import "./components/blocks/";
+
+// [GROUP] CONNECTING THE COMPONENTS | SITE HEADER
+// ===================================================================================================>
+// [INFORMATION] => [Independent blocks]
+// @import "./components/blocks/";
+// [INFORMATION] => [Hints]
+// @import "./components/blocks/";
+// [INFORMATION] => [Tooltips]
+// @import "./components/blocks/";
+// [INFORMATION] => [Sections]
+// @import "./components/sections/";
+// [INFORMATION] => [Main block]
+@import "./components/site/site-header";
+
+// [GROUP] CONNECTING THE COMPONENTS | SITE MAIN
+// ===================================================================================================>
+// [INFORMATION] => [Independent blocks]
+// @import "./components/blocks/";
+// [INFORMATION] => [Hints]
+// @import "./components/blocks/";
+// [INFORMATION] => [Tooltips]
+// @import "./components/blocks/";
+// [INFORMATION] => [Sections]
+// @import "./components/sections/";
+// [INFORMATION] => [Main block]
+@import "./components/site/site-main";
+
+// [GROUP] CONNECTING THE COMPONENTS | SITE FOOTER
+// ===================================================================================================>
+// [INFORMATION] => [Independent blocks]
+// @import "./components/blocks/";
+// [INFORMATION] => [Hints]
+// @import "./components/blocks/";
+// [INFORMATION] => [Tooltips]
+// @import "./components/blocks/";
+// [INFORMATION] => [Sections]
+// @import "./components/sections/";
+// [INFORMATION] => [Main block]
+@import "./components/site/site-footer";
+
+// [GROUP] CONNECTING THE COMPONENTS | POPUPS
+// ===================================================================================================>
+// [INFORMATION] => [Groups]
+// @import "./components/blocks/";
+// [INFORMATION] => [Contents]
+// @import "./components/blocks/";
+// [INFORMATION] => [Independents]
+// @import "./components/blocks/";
+
+// [GROUP] CONNECTING THE COMPONENTS | DIALOG WINDOWS
+// ===================================================================================================>
+// [INFORMATION] => [Groups]
+// @import "./components/blocks/";
+// [INFORMATION] => [Contents]
+// @import "./components/blocks/";
+// [INFORMATION] => [Independents]
+// @import "./components/blocks/";
+
+// [GROUP] CONNECTING THE COMPONENTS | DIALOG WINDOWS (WITHOUT A LIGHTBOX)
+// ===================================================================================================>
+// [INFORMATION] => [Groups]
+// @import "./components/blocks/";
+// [INFORMATION] => [Contents]
+// @import "./components/blocks/";
+// [INFORMATION] => [Independents]
+// @import "./components/blocks/";
+
+// [GROUP] CONNECTING THE COMPONENTS | MODAL DIALOG WINDOWS
+// ===================================================================================================>
+// [INFORMATION] => [Groups]
+// @import "./components/blocks/";
+// [INFORMATION] => [Contents]
+// @import "./components/blocks/";
+// [INFORMATION] => [Independents]
+// @import "./components/blocks/";
+
+// [GROUP] CONNECTING THE COMPONENTS | MODAL DIALOG WINDOWS (WITHOUT A LIGHTBOX)
+// ===================================================================================================>
+// [INFORMATION] => [Groups]
+// @import "./components/blocks/";
+// [INFORMATION] => [Contents]
+// @import "./components/blocks/";
+// [INFORMATION] => [Independents]
+// @import "./components/blocks/";
+
+// [GROUP] CONNECTING A GLOBAL MEDIA-QUERY THAT DISABLES ANIMATIONS AND EFFECTS
+// ===================================================================================================>
+@import "./config/accessibility/query-reduced";

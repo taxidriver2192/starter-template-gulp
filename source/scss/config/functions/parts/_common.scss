@@ -1,0 +1,6 @@
+// [GROUP] SETTING UP COMMON FUNCTIONS FOR DIFFERENT TASKS
+// ===================================================================================================>
+// [INFORMATION] => [Alignment of the block extending beyond the container]
+@function block-beyond($content-width: var(--content-width), $container-offset: var(--container-offset)) {
+  @return max(#{$container-offset}, (100% - #{$content-width}) / 2);
+}
